@@ -13,7 +13,6 @@
 .link-primary {
   color: #0d6efd;
 }
-
 .link-primary:hover, .link-primary:focus {
   color: #0a58ca;
 }
@@ -21,7 +20,6 @@
 .link-secondary {
   color: #6c757d;
 }
-
 .link-secondary:hover, .link-secondary:focus {
   color: #565e64;
 }
@@ -29,7 +27,6 @@
 .link-success {
   color: #198754;
 }
-
 .link-success:hover, .link-success:focus {
   color: #146c43;
 }
@@ -37,7 +34,6 @@
 .link-info {
   color: #0dcaf0;
 }
-
 .link-info:hover, .link-info:focus {
   color: #3dd5f3;
 }
@@ -45,7 +41,6 @@
 .link-warning {
   color: #ffc107;
 }
-
 .link-warning:hover, .link-warning:focus {
   color: #ffcd39;
 }
@@ -53,7 +48,6 @@
 .link-danger {
   color: #dc3545;
 }
-
 .link-danger:hover, .link-danger:focus {
   color: #b02a37;
 }
@@ -61,7 +55,6 @@
 .link-light {
   color: #f8f9fa;
 }
-
 .link-light:hover, .link-light:focus {
   color: #f9fafb;
 }
@@ -69,7 +62,6 @@
 .link-dark {
   color: #212529;
 }
-
 .link-dark:hover, .link-dark:focus {
   color: #1a1e21;
 }
@@ -78,13 +70,11 @@
   position: relative;
   width: 100%;
 }
-
 .ratio::before {
   display: block;
   padding-top: var(--bs-aspect-ratio);
   content: "";
 }
-
 .ratio > * {
   position: absolute;
   top: 0;
@@ -98,15 +88,15 @@
 }
 
 .ratio-4x3 {
-  --bs-aspect-ratio: calc(3 / 4 * 100%);
+  --bs-aspect-ratio: 75%;
 }
 
 .ratio-16x9 {
-  --bs-aspect-ratio: calc(9 / 16 * 100%);
+  --bs-aspect-ratio: 56.25%;
 }
 
 .ratio-21x9 {
-  --bs-aspect-ratio: calc(9 / 21 * 100%);
+  --bs-aspect-ratio: 42.8571428571%;
 }
 
 .fixed-top {
@@ -126,7 +116,6 @@
 }
 
 .sticky-top {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1020;
@@ -134,49 +123,39 @@
 
 @media (min-width: 576px) {
   .sticky-sm-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
 }
-
 @media (min-width: 768px) {
   .sticky-md-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
 }
-
 @media (min-width: 992px) {
   .sticky-lg-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
 }
-
 @media (min-width: 1200px) {
   .sticky-xl-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
 }
-
 @media (min-width: 1400px) {
   .sticky-xxl-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
 }
-
 .hstack {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,7 +218,6 @@
 .vr {
   display: inline-block;
   -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
       align-self: stretch;
   width: 1px;
   min-height: 1em;
@@ -332,7 +310,6 @@
 }
 
 .d-grid {
-  display: -ms-grid !important;
   display: grid !important;
 }
 
@@ -401,7 +378,6 @@
 }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -820,7 +796,6 @@
 
 .align-self-auto {
   -ms-flex-item-align: auto !important;
-      -ms-grid-row-align: auto !important;
       align-self: auto !important;
 }
 
@@ -836,7 +811,6 @@
 
 .align-self-center {
   -ms-flex-item-align: center !important;
-      -ms-grid-row-align: center !important;
       align-self: center !important;
 }
 
@@ -847,7 +821,6 @@
 
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
-      -ms-grid-row-align: stretch !important;
       align-self: stretch !important;
 }
 
@@ -1740,7 +1713,6 @@
 .user-select-all {
   -webkit-user-select: all !important;
      -moz-user-select: all !important;
-      -ms-user-select: all !important;
           user-select: all !important;
 }
 
@@ -1842,7 +1814,6 @@
     display: block !important;
   }
   .d-sm-grid {
-    display: -ms-grid !important;
     display: grid !important;
   }
   .d-sm-table {
@@ -2024,7 +1995,6 @@
   }
   .align-self-sm-auto {
     -ms-flex-item-align: auto !important;
-        -ms-grid-row-align: auto !important;
         align-self: auto !important;
   }
   .align-self-sm-start {
@@ -2037,7 +2007,6 @@
   }
   .align-self-sm-center {
     -ms-flex-item-align: center !important;
-        -ms-grid-row-align: center !important;
         align-self: center !important;
   }
   .align-self-sm-baseline {
@@ -2046,7 +2015,6 @@
   }
   .align-self-sm-stretch {
     -ms-flex-item-align: stretch !important;
-        -ms-grid-row-align: stretch !important;
         align-self: stretch !important;
   }
   .order-sm-first {
@@ -2513,7 +2481,6 @@
     text-align: center !important;
   }
 }
-
 @media (min-width: 768px) {
   .float-md-start {
     float: left !important;
@@ -2534,7 +2501,6 @@
     display: block !important;
   }
   .d-md-grid {
-    display: -ms-grid !important;
     display: grid !important;
   }
   .d-md-table {
@@ -2716,7 +2682,6 @@
   }
   .align-self-md-auto {
     -ms-flex-item-align: auto !important;
-        -ms-grid-row-align: auto !important;
         align-self: auto !important;
   }
   .align-self-md-start {
@@ -2729,7 +2694,6 @@
   }
   .align-self-md-center {
     -ms-flex-item-align: center !important;
-        -ms-grid-row-align: center !important;
         align-self: center !important;
   }
   .align-self-md-baseline {
@@ -2738,7 +2702,6 @@
   }
   .align-self-md-stretch {
     -ms-flex-item-align: stretch !important;
-        -ms-grid-row-align: stretch !important;
         align-self: stretch !important;
   }
   .order-md-first {
@@ -3205,7 +3168,6 @@
     text-align: center !important;
   }
 }
-
 @media (min-width: 992px) {
   .float-lg-start {
     float: left !important;
@@ -3226,7 +3188,6 @@
     display: block !important;
   }
   .d-lg-grid {
-    display: -ms-grid !important;
     display: grid !important;
   }
   .d-lg-table {
@@ -3408,7 +3369,6 @@
   }
   .align-self-lg-auto {
     -ms-flex-item-align: auto !important;
-        -ms-grid-row-align: auto !important;
         align-self: auto !important;
   }
   .align-self-lg-start {
@@ -3421,7 +3381,6 @@
   }
   .align-self-lg-center {
     -ms-flex-item-align: center !important;
-        -ms-grid-row-align: center !important;
         align-self: center !important;
   }
   .align-self-lg-baseline {
@@ -3430,7 +3389,6 @@
   }
   .align-self-lg-stretch {
     -ms-flex-item-align: stretch !important;
-        -ms-grid-row-align: stretch !important;
         align-self: stretch !important;
   }
   .order-lg-first {
@@ -3897,7 +3855,6 @@
     text-align: center !important;
   }
 }
-
 @media (min-width: 1200px) {
   .float-xl-start {
     float: left !important;
@@ -3918,7 +3875,6 @@
     display: block !important;
   }
   .d-xl-grid {
-    display: -ms-grid !important;
     display: grid !important;
   }
   .d-xl-table {
@@ -4100,7 +4056,6 @@
   }
   .align-self-xl-auto {
     -ms-flex-item-align: auto !important;
-        -ms-grid-row-align: auto !important;
         align-self: auto !important;
   }
   .align-self-xl-start {
@@ -4113,7 +4068,6 @@
   }
   .align-self-xl-center {
     -ms-flex-item-align: center !important;
-        -ms-grid-row-align: center !important;
         align-self: center !important;
   }
   .align-self-xl-baseline {
@@ -4122,7 +4076,6 @@
   }
   .align-self-xl-stretch {
     -ms-flex-item-align: stretch !important;
-        -ms-grid-row-align: stretch !important;
         align-self: stretch !important;
   }
   .order-xl-first {
@@ -4589,7 +4542,6 @@
     text-align: center !important;
   }
 }
-
 @media (min-width: 1400px) {
   .float-xxl-start {
     float: left !important;
@@ -4610,7 +4562,6 @@
     display: block !important;
   }
   .d-xxl-grid {
-    display: -ms-grid !important;
     display: grid !important;
   }
   .d-xxl-table {
@@ -4792,7 +4743,6 @@
   }
   .align-self-xxl-auto {
     -ms-flex-item-align: auto !important;
-        -ms-grid-row-align: auto !important;
         align-self: auto !important;
   }
   .align-self-xxl-start {
@@ -4805,7 +4755,6 @@
   }
   .align-self-xxl-center {
     -ms-flex-item-align: center !important;
-        -ms-grid-row-align: center !important;
         align-self: center !important;
   }
   .align-self-xxl-baseline {
@@ -4814,7 +4763,6 @@
   }
   .align-self-xxl-stretch {
     -ms-flex-item-align: stretch !important;
-        -ms-grid-row-align: stretch !important;
         align-self: stretch !important;
   }
   .order-xxl-first {
@@ -5281,7 +5229,6 @@
     text-align: center !important;
   }
 }
-
 @media (min-width: 1200px) {
   .fs-1 {
     font-size: 2.5rem !important;
@@ -5296,7 +5243,6 @@
     font-size: 1.5rem !important;
   }
 }
-
 @media print {
   .d-print-inline {
     display: inline !important;
@@ -5308,7 +5254,6 @@
     display: block !important;
   }
   .d-print-grid {
-    display: -ms-grid !important;
     display: grid !important;
   }
   .d-print-table {

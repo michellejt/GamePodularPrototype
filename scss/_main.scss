@@ -1,9 +1,5 @@
 .jumbotron {
-    svg {
-      position: absolute;
-      margin-right: 100px;
-      margin-left: -270px;
-    }
+  height:50vh;
 }
 
 .nfbutton {
@@ -81,4 +77,127 @@
   background: #631912;
 } 
 
-//buttons
+//landing page animation
+:root {
+  --color: #ff39d7;
+}
+
+.container.animation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+ // overflow: hidden;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  20%,
+  50%,
+  60%,
+  75%,
+  100% {
+    opacity: 1;
+  }
+  10%,
+  25%,
+  65%,
+  85% {
+    opacity: 0.8;
+  }
+  12%,
+  22%,
+  67%,
+  90% {
+    opacity: 0.1;
+  }
+}
+
+
+.triangle-emitter {
+  position: relative;
+}
+
+.triangle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate3d(-50%, -50%, 0) rotate(var(--rotation));
+  animation: triangle-emit 6s ease-in infinite;
+
+  opacity: 0;
+
+  @keyframes triangle-emit {
+    3%,
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate3d(-300%, -50%, 0)
+        rotate(calc(var(--rotation) + 100deg * var(--direction)))
+        scale3d(0.666, 0.666, 1);
+    }
+  }
+
+  @for $t from 1 through 7 {
+    &:nth-child(#{$t}) {
+      animation-delay: 1s * ($t - 1);
+    }
+  }
+}
+
+svg {
+  fill: transparent;
+  stroke: var(--color);
+  stroke-width: 5;
+
+  filter: drop-shadow(0 0 5px var(--color)) drop-shadow(0 0 5px var(--color));
+
+  overflow: visible;
+
+  height: 10vmin;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  stroke-dasharray: 160;
+  stroke-dashoffset: 160;
+
+  animation: draw 1s ease-out forwards, flicker 1s ease-in-out forwards 0.25s;
+
+  path:nth-child(2) {
+    stroke-width: 1px;
+    stroke: white;
+    filter: blur(1px);
+  }
+}
+
+@keyframes img-rotate-3d-animation {
+  50% {
+    transform: rotate3d(2, 0, 1, 180deg);
+  }
+  100% {
+    transform: rotate3d(2, 0, 1, 360deg);
+  }
+}
+
+.pad {
+  img {
+    width: 20vmin;
+    -webkit-filter: drop-shadow(5px 1px 0px #ff39d7)
+      drop-shadow(-1px -1px 0px #ff39d7);
+    filter: drop-shadow(5px 1px 2px #ff39d7) drop-shadow(-1px -1px 2px #ff39d7);
+    transform: rotateX(-373deg) rotateY(0deg) rotateZ(-30deg);
+  }
+    &:after {
+    content:"";
+    filter: opacity(0.7) drop-shadow(0 0 0 #ff39d7);
+  }
+}
