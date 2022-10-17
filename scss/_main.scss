@@ -14,6 +14,7 @@
     border:  none;
     border-radius: calc(0.15em + 0.15em + 0.15em);
     background: red;
+	z-index: 11;
 
     .logo {
       color: #fff;
@@ -404,4 +405,38 @@ svg {
 			}
 		}
 	}
+}
+
+//hover image
+.inner {
+	overflow: hidden;
+}
+
+.inner img {
+	transition: all 1s ease;
+}
+
+.inner:hover img {
+	transform: scale(1.1);
+}
+
+article#card {
+    z-index: 10;
+}
+
+#card:focus,
+#card:hover,
+#card:active {
+   box-shadow: rgb(136 165 191 / 48%) 0px 2px 16px 0px, rgb(255 255 255 / 80%) 0px -2px 0px 0px;
+   padding:10px;
+ }
+
+ article#card {
+  padding:10px;
+  border:none
+}
+
+.card-block a {
+  color: inherit;
+  text-decoration: none;
 }
