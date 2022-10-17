@@ -29,12 +29,12 @@
   border-radius: 1.15em;
 }
 .nfbutton .logo:hover span:nth-child(odd) {
-  color: transparent;
+  color: #fff;
 }
 .nfbutton .logo:hover :nth-child(n+0) {
-  color: green;
-  -webkit-transition: 5s;
-  transition: 5s;
+  color: rgb(255, 255, 255);
+  -webkit-transition: 1s;
+  transition: 1s;
   top: -15px;
 }
 .nfbutton .logo:before {
@@ -58,9 +58,7 @@
 .nfbutton .logo span:nth-child(odd) {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-  color: brown;
-  -webkit-box-shadow: 0 60px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 60px 20px rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.647);
 }
 
 .card {
@@ -232,7 +230,7 @@ svg path:nth-child(2) {
   }
 }
 .pad img {
-  width: 20vmin;
+  width: 25vmin;
   -webkit-filter: drop-shadow(5px 1px 0px #ff39d7) drop-shadow(-1px -1px 0px #ff39d7);
   filter: drop-shadow(5px 1px 2px #ff39d7) drop-shadow(-1px -1px 2px #ff39d7);
   -webkit-transform: rotateX(-373deg) rotateY(0deg) rotateZ(-30deg);

@@ -22,15 +22,15 @@
       border-radius: calc(0.5em + 0.5em + 0.15em);
   
       &:hover span:nth-child(odd) {
-        color:transparent;
+        color: #fff;
       }
       
       //slow transition to green  
       &:hover {
         :nth-child(n+0){
           //position:absolute;
-          color: green;
-          transition:5s;
+          color: rgb(255, 255, 255);
+          transition:1s;
           top:-15px;
         }
       }
@@ -47,8 +47,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        border: none;
-        
+        border: none;        
       } 
   
       span {
@@ -56,10 +55,10 @@
         
         &:nth-child(odd) {
           transform: translateY(-10px);
-          color: brown;
-          box-shadow: 0 60px 20px rgba(0, 0, 0, 0.1);
+          color: rgba(255, 255, 255, 0.647);
+        //  box-shadow: 0 60px 20px rgba(0, 0, 0, 0.1);
         } 
-        //ennd
+        //end
       }
     }
   }
@@ -190,7 +189,7 @@ svg {
 
 .pad {
   img {
-    width: 20vmin;
+    width: 25vmin;
     -webkit-filter: drop-shadow(5px 1px 0px #ff39d7)
       drop-shadow(-1px -1px 0px #ff39d7);
     filter: drop-shadow(5px 1px 2px #ff39d7) drop-shadow(-1px -1px 2px #ff39d7);
